@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Star Twinkling Animation</title>
+	<style type="text/css">
+        body{
+            background-color:black
+        }
+		.star {
+		  width: 10px;
+		  height: 10px;
+		  background-color: white;
+		  border-radius: 50%;
+		  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow, 0 0 60px yellow;
+		  animation-name: twinkling;
+		  animation-duration: 1s;
+		  animation-timing-function: ease-in-out;
+		  animation-iteration-count: infinite;
+		}
+
+		.star1 {
+		  position: absolute;
+		  top: 20%;
+		  left: 55%;
+		}
+
+		.star2 {
+		  position: absolute;
+		  top: 25%;
+		  left: 75%;
+		}
+		.star3 {
+			position: absolute;
+		  top: 10%;
+		  left: 95%;
+		}
+		 .star4 {
+			position: absolute;
+		  top: 15%;
+		  left: 15%;
+		}
+		h1{
+			color:white;
+			position: relative;
+			top: 170px;
+			left:50px;
+			font-size: 50px;
+		}
+		p{
+			color:white;
+			position: relative;
+			top:200px;
+			left:50px;	
+			font-size: 24px;
+		}
+		a{
+			text-decoration: none;
+			border: 2px solid white;
+			position: relative;
+			top: 180px;
+			left:50px;
+			padding:10px 20px;
+			border-radius: 34px;
+			color: white;
+		}
+
+		@keyframes twinkling {
+		  0% {
+		    transform: scale(1);
+		    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow, 0 0 60px yellow;
+		  opacity: 1;
+		}
+		  50% {
+		    transform: scale(1.2);
+		    box-shadow: none;
+		  }
+		  100% {
+		    transform: scale(1);
+		    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow, 0 0 60px yellow;
+		  opacity: 0;}
+		}
+	</style>
+</head>
+<body>
+	<div class="star star1"></div>
+	<div class="star star2"></div>
+	<div class="star star3"></div>
+	<div class="star star4"></div>
+	<div class="star star5"></div>
+	<p>Welcome to our</p>
+	<h1>Space Window</h1>
+	<a href="home.html">Take a tour</a>
+</body>
+</html>
